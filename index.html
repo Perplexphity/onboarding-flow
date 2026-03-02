@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opus — Onboarding</title>
+
+  <!-- Fonts: Instrument Serif (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <a href="#main" class="sr-only">Skip to content</a>
+
+  <main id="main" class="onboarding" role="main">
+
+    <div class="screens-wrapper" aria-live="polite">
+
+      <!-- Screen 1 — Welcome -->
+      <section class="screen active" data-screen="0" aria-label="Welcome">
+        <h1 class="screen__heading">Everything starts here.</h1>
+        <p class="screen__body">A smarter way to move through your day. No setup required — just you.</p>
+        <button class="cta" data-action="next" aria-label="Get started">Get started</button>
+      </section>
+
+      <!-- Screen 2 — Personalization -->
+      <section class="screen" data-screen="1" aria-label="Personalization">
+        <h2 class="screen__heading">Make it yours.</h2>
+        <p class="screen__body">Pick a few things you care about. We'll shape the experience around you.</p>
+        <div class="chips-container" role="group" aria-label="Select your interests">
+          <button class="chip" role="checkbox" aria-checked="false" data-interest="technology">Technology</button>
+          <button class="chip" role="checkbox" aria-checked="false" data-interest="design">Design</button>
+          <button class="chip" role="checkbox" aria-checked="false" data-interest="science">Science</button>
+          <button class="chip" role="checkbox" aria-checked="false" data-interest="music">Music</button>
+          <button class="chip" role="checkbox" aria-checked="false" data-interest="business">Business</button>
+          <button class="chip" role="checkbox" aria-checked="false" data-interest="health">Health</button>
+          <button class="chip" role="checkbox" aria-checked="false" data-interest="culture">Culture</button>
+          <button class="chip" role="checkbox" aria-checked="false" data-interest="sports">Sports</button>
+        </div>
+        <button class="cta" data-action="next" aria-label="Continue">Continue</button>
+      </section>
+
+      <!-- Screen 3 — Ready State -->
+      <section class="screen" data-screen="2" aria-label="Ready">
+        <svg class="success-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="28" cy="28" r="27" stroke="#111111" stroke-width="1.5"/>
+          <path class="check-path" d="M18 28.5L25 35.5L38 21.5" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h2 class="screen__heading">You're in.</h2>
+        <p class="screen__body">That's it. No tutorials, no walkthroughs. Start exploring.</p>
+        <button class="cta" data-action="finish" aria-label="Let's go">Let's go</button>
+      </section>
+
+    </div>
+
+    <!-- Progress Indicator -->
+    <nav class="progress" aria-label="Onboarding progress">
+      <div class="progress__dot active" data-dot="0" aria-label="Step 1 of 3, current"></div>
+      <div class="progress__dot" data-dot="1" aria-label="Step 2 of 3"></div>
+      <div class="progress__dot" data-dot="2" aria-label="Step 3 of 3"></div>
+    </nav>
+
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
