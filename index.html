@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DES-1950 Onboarding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-live="polite">
+      <div class="progress" role="status" aria-label="Onboarding progress">
+        <span class="dot is-active" data-dot="0" aria-hidden="true"></span>
+        <span class="dot" data-dot="1" aria-hidden="true"></span>
+        <span class="dot" data-dot="2" aria-hidden="true"></span>
+      </div>
+
+      <section class="screen is-active" data-screen="0">
+        <div class="content">
+          <p class="eyebrow animate">Welcome</p>
+          <h1 class="heading animate">Everything starts here.</h1>
+          <p class="body animate">A smarter way to move through your day. No setup required — just you.</p>
+        </div>
+        <button class="cta animate" data-next>Get started</button>
+      </section>
+
+      <section class="screen" data-screen="1">
+        <div class="content">
+          <p class="eyebrow animate">Personalization</p>
+          <h1 class="heading animate">Make it yours.</h1>
+          <p class="body animate">Pick a few things you care about. We'll shape the experience around you.</p>
+          <div class="chips" role="group" aria-label="Select your interests">
+            <button class="chip animate" type="button">Technology</button>
+            <button class="chip animate" type="button">Design</button>
+            <button class="chip animate" type="button">Science</button>
+            <button class="chip animate" type="button">Music</button>
+            <button class="chip animate" type="button">Business</button>
+            <button class="chip animate" type="button">Health</button>
+            <button class="chip animate" type="button">Culture</button>
+            <button class="chip animate" type="button">Sports</button>
+          </div>
+        </div>
+        <button class="cta animate" data-next>Continue</button>
+      </section>
+
+      <section class="screen" data-screen="2">
+        <div class="content">
+          <p class="eyebrow animate">All set</p>
+          <h1 class="heading animate">You're in.</h1>
+          <p class="body animate">That's it. No tutorials, no walkthroughs. Start exploring.</p>
+        </div>
+        <button class="cta animate" type="button">Let's go</button>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
